@@ -1,18 +1,37 @@
-# To-do
+# To-do API 📋
 
 ## Sobre o Projeto
 
-API simples de To-do List desenvolvida em Spring
+API REST de gerenciamento de tarefas desenvolvida com **Spring Boot**.
 
-## 🧩 Funcionalidades
+## Funcionalidades
 - Cadastro de usuários
 - CRUD de tarefas (To-do)
 
-## 📌 Detalhes do Projeto
+## Detalhes do Projeto
 - Autenticação via Basic Authentication
 - Documentação da API com Swagger
-- Testes
-- Arquitetura em camadas (Controller, Service, Repository)
+- Testes unitários utilizando **JUnit** e **Mockito**.
+  
+### Usuário
 
-## 👨‍💻 Autor
-[Gabriel Venancio de Avelar](https://github.com/gabrielvavelar)
+| Método | Rota             | Descrição              |
+| ------ | ---------------- | ---------------------- |
+| POST   | `/auth/register` | Cadastrar novo usuário |
+
+### To-Do
+
+| Método | Rota              | Descrição                    |
+| ------ | ----------------- | ---------------------------- |
+| POST   | `/todo`           | Criar tarefa                 |
+| GET    | `/todo`           | Listar tarefas               |
+| PUT    | `/todo/{id}`      | Atualizar tarefa             |
+| PUT    | `/todo/{id}/done` | Alternar status de conclusão |
+| DELETE | `/todo/{id}`      | Deletar tarefa               |
+
+
+---
+
+Feito por [Gabriel Venancio de Avelar](https://github.com/gabrielvavelar).
+
+
